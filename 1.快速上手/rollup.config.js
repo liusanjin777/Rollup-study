@@ -4,7 +4,7 @@ const buildOptions = {
   // 出口  可以为数组或者对象
   output: {
     // 产物输出目录
-    dir: "dist/esModule",
+    dir: "dist/es",
     // 产物输出格式
     format: "esm",
   },

@@ -35,4 +35,8 @@ const outputOptionsList = [
     console.log(error);
     buildFaild = true;
   }
+  if (bundle) {
+    // 最后调用 bundle.close 方法结束打包
+    await bundle.close();
+  }
 })();

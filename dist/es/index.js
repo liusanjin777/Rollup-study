@@ -2,4 +2,4 @@ const foo = (name) => {
   console.log(`foo - ${name}`);
 };
 
-foo("rollup");
+foo("rollup1");
