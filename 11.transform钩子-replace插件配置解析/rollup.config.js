@@ -1,4 +1,4 @@
-import html from "@rollup/plugin-html";
+import replace from "@rollup/plugin-replace";
 
 const buildOptions = {
   // 入口
@@ -7,7 +7,11 @@ const buildOptions = {
     // 产物输出目录
     dir: "dist",
   },
-  plugins: [html()],
+  plugins: [
+    replace({
+      __test__: 1,
+    }),
+  ],
 };
 
 export default buildOptions;

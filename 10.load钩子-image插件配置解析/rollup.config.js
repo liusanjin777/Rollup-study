@@ -1,4 +1,4 @@
-import html from "@rollup/plugin-html";
+import image from "@rollup/plugin-image";
 
 const buildOptions = {
   // 入口
@@ -7,7 +7,11 @@ const buildOptions = {
     // 产物输出目录
     dir: "dist",
   },
-  plugins: [html()],
+  plugins: [
+    image({
+      dom: true,
+    }),
+  ],
 };
 
 export default buildOptions;
